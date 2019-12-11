@@ -5,9 +5,9 @@ var Bot = require('node-telegram-bot-api'),
 
 console.log('bot server started...');
 
-bot.onText(/^\/say_hello (.+)$/, function (msg, match) {
-  var name = match[1];
-  bot.sendMessage(msg.chat.id, 'Hello ' + name + '!').then(function () {
+bot.onText(/\/mighty_mighty/, function(msg, match) {
+  
+  bot.sendMessage(msg.chat.id, 'YEMIT ').then(function () {
     // reply sent!
   });
 });
